@@ -4,6 +4,27 @@
 Містить:
     - tree_by_levels: повертає список елементів дерева, відсортованих за рівнями
 """
+class Node:
+    """
+    Вузол бінарного дерева.
+
+    Attributes:
+        left:  лівий дочірній вузол
+        right: правий дочірній вузол
+        value: значення вузла
+    """
+    def __init__(self, l, r, n):
+        """
+        Ініціалізує вузол бінарного дерева.
+
+        Args:
+            L: лівий дочірній вузол (або None)
+            R: правий дочірній вузол (або None)
+            n: значення вузла
+        """
+        self.left = l
+        self.right = r
+        self.value = n
 def tree_by_levels(node):
     """
     Returns a list of tree elements sorted by levels (BFS order).
