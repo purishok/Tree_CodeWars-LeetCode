@@ -1,3 +1,9 @@
+"""
+Модуль для обходу бінарного дерева за рівнями.
+
+Містить:
+    - tree_by_levels: повертає список елементів дерева, відсортованих за рівнями
+"""
 def tree_by_levels(node):
     """
     Returns a list of tree elements sorted by levels (BFS order).
