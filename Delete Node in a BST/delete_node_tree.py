@@ -16,6 +16,14 @@ class TreeNode:
         right: правий дочірній вузол (val > self.val)
     """
     def __init__(self, val=0, left=None, right=None):
+        """
+        Ініціалізує вузол бінарного дерева.
+
+        Args:
+            L: лівий дочірній вузол (або None)
+            R: правий дочірній вузол (або None)
+            n: значення вузла
+        """
         self.val = val
         self.left = left
         self.right = right

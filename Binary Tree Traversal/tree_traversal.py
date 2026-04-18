@@ -6,6 +6,27 @@
     - in_order:   обхід у симетричному порядку (Ліво → Вузол → Право)
     - post_order: обхід у зворотному порядку (Ліво → Право → Вузол)
 """
+class Node:
+    """
+    Вузол бінарного дерева.
+
+    Attributes:
+        left:  лівий дочірній вузол
+        right: правий дочірній вузол
+        value: значення вузла
+    """
+    def __init__(self, data, left=None, right=None):
+        """
+        Ініціалізує вузол бінарного дерева.
+
+        Args:
+            L: лівий дочірній вузол (або None)
+            R: правий дочірній вузол (або None)
+            n: значення вузла
+        """
+        self.left = left
+        self.right = right
+        self.data = data
 # Pre-order traversal
 def pre_order(node):
     """
